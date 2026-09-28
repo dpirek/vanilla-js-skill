@@ -2,7 +2,7 @@
 'use strict';
 /** Offline app template and agent brief. Node.js 18+; no packages required.
  * The snapshot below contains unmodified upstream source, including its own SKILL.md.
- * Run: node /path/to/my-skill/templates/agent-template.js /absolute/new-app
+ * Run: node /path/to/vanilla-js-app/templates/agent-template.js /absolute/new-app
  * It deliberately refuses existing destinations, including empty directories.
  */
 const fs = require('node:fs');
@@ -98,7 +98,7 @@ function scaffold(destination) {
 }
 function agentPrompt({ destination, request = 'Reproduce the original starter exactly.' }) {
   return [
-    `Use the my-skill SKILL.md instructions. App destination: ${JSON.stringify(destination)}.`,
+    `Use the vanilla-js-app SKILL.md instructions. App destination: ${JSON.stringify(destination)}.`,
     `Baseline: ${source.repository} at ${source.commit}.`,
     'Read references/api-notes.md, then scaffold with templates/agent-template.js.',
     'Preserve every baseline path. Backend: CommonJS; browser: ES modules and Web Components.',

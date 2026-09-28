@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-// Run: node /absolute/my-skill/examples/advanced.js /absolute/new-app
+// Run: node /absolute/vanilla-js-app/examples/advanced.js /absolute/new-app
 // Creates a starter variant: an in-memory searchable directory, with unchanged paths.
 const fs = require('node:fs');
 const path = require('node:path');

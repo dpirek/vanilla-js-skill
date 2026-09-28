@@ -1,5 +1,5 @@
 ---
-name: my-skill
+name: vanilla-js-app
 description: Create apps with the exact tracked file structure of dpirek/vanilla-js-starter-app using its bundled, pinned source snapshot. Use for reproducing this starter or building a new app with its plain Node.js server, custom router, and browser Web Components architecture.
 ---
 
@@ -23,8 +23,8 @@ Produce the same app file structure as the reference repository. Start from the 
 3. Generate the app offline:
 
    ```sh
-   node /absolute/my-skill/templates/agent-template.js /absolute/new-app
-   node /absolute/my-skill/scripts/validate.js /absolute/new-app --exact
+   node /absolute/vanilla-js-app/templates/agent-template.js /absolute/new-app
+   node /absolute/vanilla-js-app/scripts/validate.js /absolute/new-app --exact
    ```
 
    Substitute actual paths. The generator refuses every existing destination and never downloads packages or starts a server.
@@ -32,7 +32,7 @@ Produce the same app file structure as the reference repository. Start from the 
 5. Validate the final layout:
 
    ```sh
-   node /absolute/my-skill/scripts/validate.js /absolute/new-app
+   node /absolute/vanilla-js-app/scripts/validate.js /absolute/new-app
    ```
 
    This requires all 25 paths, rejects extra source files and symlinks, checks package/module conventions and JavaScript syntax, and reports changed files. It ignores only root `.git/` and `node_modules/`. `--exact` additionally requires every source hash to match. Validation does not prove runtime behavior.

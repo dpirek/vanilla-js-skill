@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-// Run: node /absolute/my-skill/examples/basic.js /absolute/new-app
+// Run: node /absolute/vanilla-js-app/examples/basic.js /absolute/new-app
 const { scaffold } = require('../templates/agent-template.js');
 const { validate } = require('../scripts/validate.js');
 
